@@ -1,0 +1,30 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-back-button slot="start"></ion-back-button>
+    <ion-title>Weather</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Weather</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-list>
+    <h3>Weather in {{location}}</h3>
+    <ul>
+      <li *ngFor="let weather of myweather">
+        {{weather.main}}, {{weather.description}}
+      </li>
+    </ul>
+  </ion-list>
+</ion-content>
+
+
+
+  
+
+
+

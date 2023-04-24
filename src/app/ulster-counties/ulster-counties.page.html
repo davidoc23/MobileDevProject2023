@@ -1,0 +1,15 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-back-button slot="start"></ion-back-button>
+    <ion-title>Ulster-Counties</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+ 
+  <h1>Counties in Ulster</h1>
+  <li *ngFor="let x of counties ">{{x}}</li>
+
+</ion-content>
+
+  
